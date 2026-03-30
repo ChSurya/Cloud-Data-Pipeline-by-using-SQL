@@ -13,68 +13,68 @@ Example table:
 
 ---
 
-# 1️⃣ SELECT *
+ 1️⃣ SELECT *
 
-### What it does
+What it does
 
 Gets **everything** from the table.
 
-### Example
+Example
 
 ```sql
 SELECT * FROM students;
 ```
 
-### Simple meaning
+Simple meaning - 
 
-Bring **all rows and all columns**.
+Bring all rows and all columns.
 
-### Kid example 🧸
+Kid example 🧸
 
 Like saying:
 
-> “Teacher, give me the **whole notebook**.”
+“Teacher, give me the **whole notebook.”
 
 ---
 
-# 2️⃣ SELECT column_name
+ 2️⃣ SELECT column_name
 
-### What it does
+What it does
 
-Gets **only the columns you ask for**.
+Gets only the columns you ask for.
 
-### Example
+Example
 
 ```sql
 SELECT name, age FROM students;
 ```
 
-### Simple meaning
+Simple meaning
 
-Bring only **Name and Age**, not Marks.
+Bring only Name and Age, not Marks.
 
-### Kid example 🧸
+Kid example 🧸
 
 Like saying:
 
-> “Teacher, I only want the **names list**, not marks.”
+“Teacher, I only want the **names list, not marks.”
 
 ---
 
-# 3️⃣ ORDER BY
+ 3️⃣ ORDER BY
 
-### What it does
+ What it does
 
 Sorts the data.
 
-### Example
+Example
 
 ```sql
 SELECT * FROM students
 ORDER BY marks;
 ```
 
-### Simple meaning
+Simple meaning
 
 Arranges data from **small to big**.
 
@@ -87,87 +87,87 @@ ORDER BY marks DESC;
 
 This arranges data from **big to small**.
 
-### Kid example 🧸
+Kid example 🧸
 
 Like arranging toys:
 
-* small → big
+small → big
   or
-* big → small
+big → small
 
 ---
 
-# 4️⃣ LIMIT
+4️⃣ LIMIT
 
 ### What it does
 
 Shows only **some rows from the top**.
 
-### Example
+Example
 
 ```sql
 SELECT * FROM students
 LIMIT 2;
 ```
 
-### Simple meaning
+Simple meaning
 
 Show only the **first 2 rows**.
 
-### Kid example 🧸
+Kid example 🧸
 
 Like saying:
 
-> “Give me only **first 2 chocolates** 🍫”
+“Give me only the first 2 chocolates** 🍫”
 
 ---
 
-# 5️⃣ OFFSET
+5️⃣ OFFSET
 
-### What it does
+What it does
 
 Skips some rows before showing results.
 
-### Example
+Example
 
 ```sql
 SELECT * FROM students
 LIMIT 2 OFFSET 1;
 ```
 
-### Simple meaning
+Simple meaning
 
 Skip first row, then show next 2 rows.
 
-### Kid example 🧸
+Kid example 🧸
 
 Like saying:
 
-> “Skip the first student, show me the next two.”
+“Skip the first student, show me the next two.”
 
 ---
 
-# 6️⃣ ROUND
+6️⃣ ROUND
 
-### What it does
+What it does
 
-Rounds numbers.
+Round numbers.
 
-### Example
+Example
 
 ```sql
 SELECT ROUND(85.678, 2);
 ```
 
-### Output
+Output
 
 85.68
 
-### Simple meaning
+Simple meaning
 
 Keeps only **2 numbers after decimal**.
 
-### Kid example 🧸
+Kid example 🧸
 
 Like changing:
 85.678 → 85.68
@@ -188,5 +188,5 @@ because we want **short and neat numbers**
 
 ---
 
-🎯 These commands help you **read data clearly, quickly, and neatly** from any SQL table.
+🎯 These commands help you read data clearly, quickly, and neatly from any SQL table.
 
