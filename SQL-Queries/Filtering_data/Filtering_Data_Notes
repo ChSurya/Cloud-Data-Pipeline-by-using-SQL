@@ -1,1 +1,293 @@
+# SQL Filtering Basics – Quick & Simple Guide 🚀
+
+---
+
+## 1️⃣ WHERE
+
+### What it does
+
+Filters rows based on a condition.
+
+### Example
+
+```sql
+SELECT * FROM students
+WHERE age = 10;
+```
+
+### Simple meaning
+
+Show only students whose age is 10.
+
+### Kid example 🧸
+
+Like saying:
+
+“Show only kids who are 10 years old.”
+
+---
+
+## 2️⃣ AND
+
+### What it does
+
+Checks multiple conditions together.
+
+### Example
+
+```sql
+SELECT * FROM students
+WHERE age = 10 AND marks > 75;
+```
+
+### Simple meaning
+
+Both conditions must be true.
+
+### Kid example 🧸
+
+Like saying:
+
+“Show students who are 10 years old AND scored above 75.”
+
+---
+
+## 3️⃣ OR
+
+### What it does
+
+Checks if at least one condition is true.
+
+### Example
+
+```sql
+SELECT * FROM students
+WHERE age = 10 OR marks > 85;
+```
+
+### Simple meaning
+
+Any one condition can match.
+
+### Kid example 🧸
+
+Like saying:
+
+“Show kids who are either 10 years old OR scored above 85.”
+
+---
+
+## 4️⃣ NOT
+
+### What it does
+
+Removes matching conditions.
+
+### Example
+
+```sql
+SELECT * FROM students
+WHERE NOT age = 10;
+```
+
+### Simple meaning
+
+Show students who are NOT 10 years old.
+
+### Kid example 🧸
+
+Like saying:
+
+“Show everyone except 10-year-old students.”
+
+---
+
+## 5️⃣ IN
+
+### What it does
+
+Checks multiple values easily.
+
+### Example
+
+```sql
+SELECT * FROM students
+WHERE age IN (10, 11);
+```
+
+### Simple meaning
+
+Show students whose age is 10 or 11.
+
+### Kid example 🧸
+
+Like saying:
+
+“Show kids from class 10 or 11.”
+
+---
+
+## 6️⃣ BETWEEN
+
+### What it does
+
+Filters values within a range.
+
+### Example
+
+```sql
+SELECT * FROM students
+WHERE marks BETWEEN 70 AND 90;
+```
+
+### Simple meaning
+
+Show marks between 70 and 90.
+
+### Kid example 🧸
+
+Like saying:
+
+“Show students whose marks are between 70 and 90.”
+
+---
+
+## 7️⃣ LIKE
+
+### What it does
+
+Searches for patterns in text.
+
+### Example
+
+```sql
+SELECT * FROM students
+WHERE name LIKE 'R%';
+```
+
+### Simple meaning
+
+Show names starting with R.
+
+### Kid example 🧸
+
+Like saying:
+
+“Find all kids whose names start with R.”
+
+---
+
+## 8️⃣ CONCAT
+
+### What it does
+
+Joins text together.
+
+### Example
+
+```sql
+SELECT CONCAT(name, ' - Student') FROM students;
+```
+
+### Simple meaning
+
+Combines words into one sentence.
+
+### Kid example 🧸
+
+Like joining LEGO blocks together 🧩
+
+---
+
+## 9️⃣ UPPER and LOWER
+
+### What they do
+
+Change text to uppercase or lowercase.
+
+### Example
+
+```sql
+SELECT UPPER(name), LOWER(name)
+FROM students;
+```
+
+### Simple meaning
+
+UPPER → BIG LETTERS
+LOWER → small letters
+
+### Kid example 🧸
+
+Like changing:
+ravi → RAVI
+
+---
+
+## 🔟 SUBSTR
+
+### What it does
+
+Takes part of a word.
+
+### Example
+
+```sql
+SELECT SUBSTR(name, 1, 3)
+FROM students;
+```
+
+### Simple meaning
+
+Gets first 3 letters.
+
+### Kid example 🧸
+
+RAVI → RAV
+
+---
+
+## 1️⃣1️⃣ IFNULL
+
+### What it does
+
+Replaces empty values.
+
+### Example
+
+```sql
+SELECT IFNULL(marks, 0)
+FROM students;
+```
+
+### Simple meaning
+
+If marks are empty, show 0 instead.
+
+### Kid example 🧸
+
+Like filling an empty lunch box with biscuits 🍪
+
+---
+
+# ✅ Summary Table
+
+| Command | Meaning               |
+| ------- | --------------------- |
+| WHERE   | Filter rows           |
+| AND     | Both conditions true  |
+| OR      | Any condition true    |
+| NOT     | Opposite condition    |
+| IN      | Match multiple values |
+| BETWEEN | Value in range        |
+| LIKE    | Pattern search        |
+| CONCAT  | Join text             |
+| UPPER   | Capital letters       |
+| LOWER   | Small letters         |
+| SUBSTR  | Get part of text      |
+| IFNULL  | Replace empty values  |
+
+---
+
+🎯 These filtering commands help us find exactly the data we want from large datasets.
 
